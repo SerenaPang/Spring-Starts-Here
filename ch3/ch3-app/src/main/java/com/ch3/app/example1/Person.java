@@ -1,8 +1,18 @@
-package com.ch3.app;
+package com.ch3.app.example1;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Person {
-	private String name;
-	private Parrot parrot;
+	private String name = "Ella";
+
+	private final Parrot parrot;
+
+	public Person(@Qualifier("parrot2") Parrot parrot) {
+		this.parrot = parrot; 
+	}
+	
 
 	public String getName() {
 		return name;
@@ -16,10 +26,12 @@ public class Person {
 		return parrot;
 	}
 
+
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", parrot=" + parrot + "]";
 	}
+
 
 	public void setParrot(Parrot parrot2) {
 		//this.parrot = parrot2;
