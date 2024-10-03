@@ -14,19 +14,19 @@ public class ProjectConfig {
 		p.setName("Koko");
 		return p;
 	}
-	
+
 	@Bean
 	public Parrot parrot2() {
 		Parrot p = new Parrot();
 		p.setName("miki");
 		return p;
 	}
-	
-	@Bean 
+
+	@Bean
 	public Person person(@Qualifier("parrot2") Parrot parrot) {
 		Person p = new Person(parrot);
 		p.setName("Ella");
-		//p.setParrot(parrot);
+		// p.setParrot(parrot);
 		return p;
 	}
 }
