@@ -1,4 +1,4 @@
-package com.ch3.app.example3;
+package com.ch3.app.example31;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class ProjectConfig {
 		Person p = new Person();
 		p.setName("Ella");
 		//the relationship has been established
-		p.setParrot(parrot());
+		//p.setParrot(parrot());
 		return p;
 	}
 }

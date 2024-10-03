@@ -1,4 +1,4 @@
-package com.ch3.app.example3;
+package com.ch3.app.example31;
 
 public class Person {
 	private String name;
