@@ -9,13 +9,8 @@ public class Person {
 	
 	private Parrot parrot;
 	
-//	@Autowired
-//	public Person(Parrot parrot) { //injecting value through constructor
-//		this.parrot = parrot;
-//	}
-//	
-	public Person() {
-		// TODO Auto-generated constructor stub
+	public Person(Parrot parrot2) {
+		this.parrot = parrot2;
 	}
 
 	public String getName() {
@@ -35,7 +30,6 @@ public class Person {
 		return "Person [name=" + name + ", parrot=" + parrot + "]";
 	}
 
-	@Autowired
 	public void setParrot(Parrot parrot) {
 		this.parrot = parrot;
 	}
