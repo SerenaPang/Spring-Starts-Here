@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "beans")
+@ComponentScan(basePackages = "com.ch3.app.example32")
 public class ProjectConfig {
 
 //	@Bean

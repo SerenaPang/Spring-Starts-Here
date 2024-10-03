@@ -2,7 +2,7 @@ package com.ch3.app.example37;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Parrot {
 	private String name = "Koko";
 	

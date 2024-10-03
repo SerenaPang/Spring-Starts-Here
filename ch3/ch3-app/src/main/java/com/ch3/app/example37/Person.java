@@ -1,21 +1,16 @@
 package com.ch3.app.example37;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
 	private String name = "Ella";
 	
-	private Parrot parrot;
+	private final Parrot parrot;
 	
-//	@Autowired
-//	public Person(Parrot parrot) { //injecting value through constructor
-//		this.parrot = parrot;
-//	}
-//	
-	public Person() {
-		// TODO Auto-generated constructor stub
+
+	public Person(Parrot parrot2) {
+		this.parrot = parrot2;
 	}
 
 	public String getName() {
@@ -33,10 +28,5 @@ public class Person {
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", parrot=" + parrot + "]";
-	}
-
-	@Autowired
-	public void setParrot(Parrot parrot) {
-		this.parrot = parrot;
 	}
 }

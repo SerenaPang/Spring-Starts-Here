@@ -24,9 +24,9 @@ public class ProjectConfig {
 	
 	@Bean 
 	public Person person(@Qualifier("parrot2") Parrot parrot) {
-		Person p = new Person();
+		Person p = new Person(parrot);
 		p.setName("Ella");
-		p.setParrot(parrot);
+		//p.setParrot(parrot);
 		return p;
 	}
 }
