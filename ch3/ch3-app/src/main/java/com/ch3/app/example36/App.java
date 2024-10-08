@@ -2,7 +2,6 @@ package com.ch3.app.example36;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.google.common.base.Supplier;
 
 /**
  *

@@ -1,6 +1,5 @@
 package com.ch3.app.example36;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -35,7 +34,6 @@ public class Person {
 		return "Person [name=" + name + ", parrot=" + parrot + "]";
 	}
 
-	@Autowired
 	public void setParrot(Parrot parrot) {
 		this.parrot = parrot;
 	}

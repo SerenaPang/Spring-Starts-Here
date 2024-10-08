@@ -1,7 +1,6 @@
 package com.ch3.app.example36;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -20,7 +19,7 @@ public class ProjectConfig {
 		p.setName("Miki");
 		return p;
 	}
-	
+	 
 	@Bean 
 	public Person person(Parrot parrot2) {//miki
 		Person p = new Person();
