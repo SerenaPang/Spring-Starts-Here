@@ -9,4 +9,8 @@ java -cp target/ch4-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.ch4.app.examp
 
 java -cp target/ch4-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.ch4.app.example3.App  
 
+java -cp target/ch4-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.ch4.app.example4.App 
+
+java -cp target/ch4-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.ch4.app.example5.App  
+
 ```
