@@ -1,4 +1,4 @@
-package com.ch5.app.example2;
+package com.ch5.app.example3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

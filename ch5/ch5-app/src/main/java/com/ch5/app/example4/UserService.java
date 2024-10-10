@@ -1,10 +1,10 @@
-package com.ch5.app.example2;
+package com.ch5.app.example4;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CommentRepository {
+public class UserService {
 	@Autowired
 	private CommentRepository commentRepository;
 	
@@ -12,4 +12,3 @@ public class CommentRepository {
 		return commentRepository;
 	}
 }
- 
