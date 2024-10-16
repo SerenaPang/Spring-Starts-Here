@@ -2,6 +2,8 @@ package com.ch6.app.example1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.ch6.app.example1.service.CommentService;
+
 /**
  */
 public class App 
@@ -18,5 +20,8 @@ public class App
       service.publicComment(comment);
       
       System.out.println(service.getClass());
+      
+      System.out.println("-----------------------------------------");
+      System.out.println(service.getSecretMessage());
     }
 }

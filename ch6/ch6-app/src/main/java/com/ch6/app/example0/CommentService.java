@@ -1,4 +1,4 @@
-package com.ch6.app;
+package com.ch6.app.example0;
 
 import java.util.logging.Logger;
 
@@ -9,6 +9,6 @@ public class CommentService {
 	private Logger logger = Logger.getLogger(CommentService.class.getName());
 	
 	public void publicComment(Comment comment) {
-		logger.info("Publishing comment:" + comment.getText());
+		logger.info("Publishing comment:" + comment.getText() + " by " + comment.getAuthor());
 	}
 }

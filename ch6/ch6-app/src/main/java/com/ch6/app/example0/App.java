@@ -1,4 +1,4 @@
-package com.ch6.app;
+package com.ch6.app.example0;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

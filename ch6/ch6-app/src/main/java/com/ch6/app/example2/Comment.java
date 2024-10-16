@@ -1,4 +1,4 @@
-package com.ch6.app;
+package com.ch6.app.example2;
 
 public class Comment {
 	private String text;
