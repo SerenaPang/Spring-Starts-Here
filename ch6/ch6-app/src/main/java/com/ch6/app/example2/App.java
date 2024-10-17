@@ -23,6 +23,5 @@ public class App {
 		String value = service.publicComment(comment);
 
 		logger.info(value);
-
 	}
 }
