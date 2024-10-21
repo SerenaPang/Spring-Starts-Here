@@ -13,6 +13,7 @@ public class LoggingAspect {
 	
 	@Around("execution(* com.ch6.app.example1.service.*.*(..))")
 	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+		//obtains name and params of the intercepted method
 		String MethodName = joinPoint.getSignature().getName();
 		Object[] arguments = joinPoint.getArgs();
 		
@@ -21,7 +22,7 @@ public class LoggingAspect {
 		Comment comment = new Comment();
 		comment.setText("Some other text!");
 		Object[] newArguments = {comment};
-		
+		//calls the intercepted method
 		Object returnedByMethod = joinPoint.proceed(newArguments);
 		
 		logger.info("Method executed and returned " + returnedByMethod);
