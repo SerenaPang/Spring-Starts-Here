@@ -1,9 +1,9 @@
 package com.ch6.app.example6;
 
+import java.util.Arrays;
 import java.util.logging.Logger;
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 
@@ -11,12 +11,22 @@ import org.aspectj.lang.annotation.Aspect;
 public class LoggingAspect {
 	private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 	
-	@Around(value = "@annotation(ToLog)")
-	public Object log(ProceedingJoinPoint joinPoint) throws Throwable{
+	@Around("execution(* com.ch6.app.example6.service.*.*(..))")
+	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+		//obtains name and params of the intercepted method
+		String MethodName = joinPoint.getSignature().getName();
+		Object[] arguments = joinPoint.getArgs();
 		
-		logger.info("Logging Aspect: Calling the intercepted method ");
-		Object returnedValue = joinPoint.proceed();
-		logger.info("Logging Aspect: Mehod executed and returned " + returnedValue);
-		return returnedValue;
+		logger.info("Method " + MethodName + " with parameters " + Arrays.asList(arguments) 
+		 + " will execute");
+		Comment comment = new Comment();
+		comment.setText("Some other text!");
+		Object[] newArguments = {comment};
+		//calls the intercepted method
+		Object returnedByMethod = joinPoint.proceed(newArguments);
+		
+		logger.info("Method executed and returned " + returnedByMethod);
+		
+		return returnedByMethod;
 	}
 }

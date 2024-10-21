@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.ch6.app.example4.service.CommentService;
 //import com.ch6.app.example2.service.CommentService;
 import com.sun.tools.javac.Main;
 

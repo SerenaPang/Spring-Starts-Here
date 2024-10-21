@@ -1,4 +1,4 @@
-package com.ch6.app.example6;
+package com.ch6.app.example10;
 
 import java.util.logging.Logger;
 
