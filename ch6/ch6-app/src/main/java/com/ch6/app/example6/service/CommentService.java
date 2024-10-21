@@ -10,8 +10,17 @@ import com.ch6.app.example1.Comment;
 public class CommentService {
 	private Logger logger = Logger.getLogger(CommentService.class.getName());
 	
-	public String publicComment(Comment comment) {
+	public void publicComment(Comment comment) {
 		logger.info("Publishing comment:" + comment.getText());
-		return "SUCEESS";
+	}
+	
+	
+	@ToLog
+	public void deleteComment(Comment comment) {
+		logger.info("Deleting commit:" + comment.getText());
+	}
+	
+	public void editComment(Comment comment) {
+		logger.info("Editing commit:" + comment.getText());
 	}
 }

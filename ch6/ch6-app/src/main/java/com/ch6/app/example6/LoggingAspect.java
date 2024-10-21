@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Aspect;
 public class LoggingAspect {
 	private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 	
-	@Around("execution(* com.ch6.app.example6.service.*.*(..))")
+	@Around("annotation(ToLog)")
 	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
 		//obtains name and params of the intercepted method
 		String MethodName = joinPoint.getSignature().getName();
