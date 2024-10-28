@@ -5,13 +5,12 @@ import java.util.logging.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.ch6.app.example4.service.CommentService;
-//import com.ch6.app.example2.service.CommentService;
-import com.sun.tools.javac.Main;
+
 
 /**
  */
 public class App {
-	private static Logger logger = Logger.getLogger(Main.class.getName());
+	private static Logger logger = Logger.getLogger(App.class.getName());
 
 	public static void main(String[] args) {
 		var c = new AnnotationConfigApplicationContext(ProjectConfig.class);

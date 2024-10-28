@@ -14,10 +14,10 @@ public class LoggingAspect {
 	@Around("execution(* com.ch6.app.example5.service.*.*(..))")
 	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
 		//obtains name and params of the intercepted method
-		String MethodName = joinPoint.getSignature().getName();
+		String methodName = joinPoint.getSignature().getName();
 		Object[] arguments = joinPoint.getArgs();
 		
-		logger.info("Method " + MethodName + " with parameters " + Arrays.asList(arguments) 
+		logger.info("Method " + methodName + " with parameters " + Arrays.asList(arguments) 
 		 + " will execute");
 		Comment comment = new Comment();
 		comment.setText("Some other text!");

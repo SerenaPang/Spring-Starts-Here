@@ -17,8 +17,7 @@ public class App
       comment.setText("Demo comment");
       comment.setAuthor("Natasha");
       
-      service.publicComment(comment);
-      
-      System.out.println(service.getClass());
+//      service.publicComment(comment);   
+//      System.out.println(service.getClass());
     }
 }
