@@ -1,10 +1,11 @@
 #How to compile and run the main class
 
-http://localhost:8080/
+http://localhost:8080/home/blue
 
-http://localhost:8080/home?color=blue
+http://localhost:8080/home/red
 
-http://localhost:8080/home?color=blue&username=Jane
+http://localhost:8080/home/green
+
 
 Move the home.html file to templates folder under src/main/templates
 
@@ -18,8 +19,11 @@ kill -9 22317
 
 
 mvn clean
+
 mvn package
+
 mvn spring-boot:run
+
 mvn package assembly:single  
 
 
