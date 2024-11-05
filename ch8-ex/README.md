@@ -4,8 +4,12 @@ http://localhost:8080/
 
 http://localhost:8080/home?color=blue
 
+http://localhost:8080/home?color=blue&username=Jane
+
 Move the home.html file to templates folder under src/main/templates
 
+
+http://localhost:8080/home?color=pink&username=Gatita
 
 
 ```
