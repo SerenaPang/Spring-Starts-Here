@@ -1,9 +1,6 @@
 #How to compile and run the main class
 
-http://localhost:8080/home
-
-
-
+http://localhost:8080/products
 
 Move the home.html file to templates folder under src/main/templates
 
