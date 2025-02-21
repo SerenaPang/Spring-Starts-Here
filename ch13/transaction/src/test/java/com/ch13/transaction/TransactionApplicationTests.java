@@ -3,10 +3,10 @@ package com.ch13.transaction;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class TransactionApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 

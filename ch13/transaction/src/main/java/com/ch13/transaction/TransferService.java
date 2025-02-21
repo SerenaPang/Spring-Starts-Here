@@ -16,7 +16,9 @@ public class TransferService {
 
 	@Transactional
 	public void transferMoney(long idSender, long idReceiver, BigDecimal amount) {
+		System.out.println("TransferService.transferMoney() id sender");
 		Account sender = accountRepository.findAccountById(idSender);
+		System.out.println("TransferService.transferMoney() id receiver");
 		Account receicer = accountRepository.findAccountById(idReceiver);
 
 		BigDecimal senderNewAmount = sender.getAmount().subtract(amount);
