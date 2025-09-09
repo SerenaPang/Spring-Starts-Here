@@ -8,7 +8,7 @@ public class Person {
 //	private String name;
 //	private Parrot parrot;
 
-	private String name = "Ella";
+	private String name = "Elsa";
 	@Autowired
 	private Parrot parrot;
 

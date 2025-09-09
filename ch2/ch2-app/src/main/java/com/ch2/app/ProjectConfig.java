@@ -34,6 +34,16 @@ public class ProjectConfig {
 		p.setParrot(parrot);
 		return p;
 	}
+	
+	//injecting bean by parameter
+//	@Bean
+//	public Person person2(Parrot parrot) {
+//		Person p = new Person();
+//		p.setName("Elsa");
+//		//establish relationship btw person and parrot
+//		p.setParrot(parrot);
+//		return p;
+//	}
 
 //
 //	@Bean
