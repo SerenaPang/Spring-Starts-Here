@@ -2,7 +2,6 @@ package com.ch5.app.example6;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.ch5.app.CommentService;
 
 /**
  */

@@ -14,9 +14,22 @@ public class App {
 	public static void main(String[] args) {
 		var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 		
-		Person p = context.getBean(Person.class);
-		System.out.println("Person's name: " + p.getName());
-		System.out.println("Parrot's name: " + p.getParrot());
+//		Person p = context.getBean(Person.class);
+//		System.out.println("Person's name: " + p.getName());
+//		System.out.println("Parrot's name: " + p.getParrot());
+		
+		//If you want to put a condition or filtering parrot, use registerbean
+		Parrot x = new Parrot();
+		x.setName("Kiki"); //create an instance and set the name
+		//define the supplier to return the instance to spring context
+		Supplier<Parrot> parrotSupplier = () -> x;
+		//add the instance to the spring context
+		//context.registerBean("parrot1", Parrot.class, parrotSupplier);
+		//or if you want to set it as a primary 
+	//	context.registerBean("parrot1", Parrot.class, parrotSupplier, bc -> bc.setPrimary(true));
+		
+		Parrot p = context.getBean(Parrot.class);
+		System.out.println(p.getName());
 	}
 	
 	/**

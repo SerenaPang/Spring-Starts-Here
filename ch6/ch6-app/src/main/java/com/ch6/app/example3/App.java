@@ -3,8 +3,6 @@ package com.ch6.app.example3;
 import org.springframework.beans.BeansException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.ch6.app.example3.service.CommentService;
-
 /**
  */
 public class App {

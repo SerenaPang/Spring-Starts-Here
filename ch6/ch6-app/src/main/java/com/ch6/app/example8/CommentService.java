@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 public class CommentService {
 	private Logger logger = Logger.getLogger(CommentService.class.getName());
 	
-	public void publicComment(Comment comment) {
-		logger.info("Publishing comment:" + comment.getText() + " by " + comment.getAuthor());
+	@ToLog
+	public String publicComment(Comment comment) {
+		logger.info("Publishing comment:" + comment.getText());
+		return "SUCEESS";
 	}
 }

@@ -1,4 +1,4 @@
-package com.ch5.app.example7;
+package com.ch5.app.example8;
 
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;

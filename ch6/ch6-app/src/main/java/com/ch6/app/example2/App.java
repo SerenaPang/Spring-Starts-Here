@@ -6,7 +6,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.ch6.app.example1.Comment;
 import com.ch6.app.example1.ProjectConfig;
-import com.ch6.app.example1.service.CommentService;
 //import com.ch6.app.example2.service.CommentService;
 import com.sun.tools.javac.Main;
 
@@ -28,6 +27,6 @@ public class App {
 		      System.out.println(service.getClass());
 		      
 		      System.out.println("-----------------------------------------");
-		      System.out.println(service.getSecretMessage());
+		  //    System.out.println(service.getSecretMessage());
 	}
 }

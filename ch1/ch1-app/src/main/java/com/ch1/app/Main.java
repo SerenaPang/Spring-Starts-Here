@@ -26,7 +26,7 @@ public class Main
     	//if you have more beans with the same type
     	Parrot p = context.getBean("parrot", Parrot.class);
     	Parrot p1 = context.getBean("parrot1", Parrot.class);
-    	System.out.println(p.getName());
+    	System.out.println(p.getName() + " - age: " + p.getAge());
     	System.out.println(p1.getName());
     	
     	String s = context.getBean(String.class);

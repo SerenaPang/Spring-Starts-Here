@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class Parrot {
 	private String name;
 
+	//after the framework create the bean, we named it to kiki
 	@PostConstruct
 	public void init() {
 		this.name = "Kiki";

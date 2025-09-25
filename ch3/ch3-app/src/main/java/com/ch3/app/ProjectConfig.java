@@ -17,6 +17,8 @@ public class ProjectConfig {
 	public Person person() {
 		Person p = new Person();
 		p.setName("Ella");
+		//here we can link the person instance with parrot with direct method call
+		
 		return p;
 	}
 }

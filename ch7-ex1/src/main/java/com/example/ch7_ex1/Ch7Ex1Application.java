@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+//This annotation defines the class of a spring boot app
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example.ch7_ex1.controllers"})
 public class Ch7Ex1Application {

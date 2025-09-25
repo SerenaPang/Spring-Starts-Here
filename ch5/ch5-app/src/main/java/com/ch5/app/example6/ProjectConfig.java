@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class ProjectConfig {
 	@Bean
+	//if you make the bean prototype scope, that means you are initializing a new instance each time
 	@Scope(BeanDefinition.SCOPE_PROTOTYPE) //makes the bean prototype scoped
 	public CommentService commentService () {
 		return new CommentService();

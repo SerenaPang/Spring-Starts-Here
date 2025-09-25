@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+//use qualifier to name different implementation
 @Qualifier("PUSH")
 public class CommentPushNotificationProxy implements CommentNotificationProxy{
 

@@ -1,10 +1,8 @@
-package com.ch6.app.example4.service;
+package com.ch6.app.example3;
 
 import java.util.logging.Logger;
 
 import org.springframework.stereotype.Service;
-
-import com.ch6.app.example4.Comment;
 
 @Service
 public class CommentService {

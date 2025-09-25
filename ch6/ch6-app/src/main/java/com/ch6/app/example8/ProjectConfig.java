@@ -6,12 +6,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan(basePackages = {"com.ch6.app.example6"})
+@ComponentScan(basePackages = {"com.ch6.app.example8"})
 @EnableAspectJAutoProxy
 public class ProjectConfig {
 	
 	@Bean 
-	public LoggingAspect apect() {
+	public LoggingAspect loggingAspect() {
 		return new LoggingAspect();
+	}
+	
+	@Bean
+	public SecurityAspect securityAspect() {
+		return new SecurityAspect();
 	}
 }

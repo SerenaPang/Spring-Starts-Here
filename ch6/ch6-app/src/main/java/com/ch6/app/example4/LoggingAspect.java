@@ -11,23 +11,14 @@ import org.aspectj.lang.annotation.Aspect;
 @Aspect
 public class LoggingAspect {
 	private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
-	
+	//defines which are the intercepted methods
 	@Around("execution(* com.ch6.app.example4.service.*.*(..))")
-	public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
-		//obtains name and params of the intercepted method
-		String MethodName = joinPoint.getSignature().getName();
-		Object[] arguments = joinPoint.getArgs();
-		
-		logger.info("Method " + MethodName + " with parameters " + Arrays.asList(arguments) 
-		 + " will execute");
-		Comment comment = new Comment();
-		comment.setText("Some other text!");
-		Object[] newArguments = {comment};
-		//calls the intercepted method
-		Object returnedByMethod = joinPoint.proceed(newArguments);
-		
-		logger.info("Method executed and returned " + returnedByMethod);
-		
-		return returnedByMethod;
+	public void log(ProceedingJoinPoint joinPoint) throws Throwable {
+		//prints a message in the console before the intercepted method's execution
+		logger.info("Method will execute");
+		//delegates to the actual intercepted method, if you don't call this method, the aspect never delegates to the intercepted method
+		joinPoint.proceed();
+		//prints a message in the console after the intercepted method's execution
+		logger.info("Method executed");
 	}
 }

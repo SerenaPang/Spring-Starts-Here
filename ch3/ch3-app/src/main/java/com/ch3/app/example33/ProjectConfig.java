@@ -19,6 +19,7 @@ public class ProjectConfig {
 		Person p = new Person();
 		p.setName("Ella");
 		//setting the reference of the parrot bean to the person's parrot attribute
+		//using direct method call, this is call direct writing
 		p.setParrot(parrot());
 		return p;
 	}

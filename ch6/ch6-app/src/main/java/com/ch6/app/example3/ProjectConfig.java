@@ -9,7 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @ComponentScan(basePackages = {"com.ch6.app.example3"})
 @EnableAspectJAutoProxy
 public class ProjectConfig {
-	
+	//adds an instance of the logging aspect to spring context
 	@Bean 
 	public LoggingAspect aspect() {
 		return new LoggingAspect();

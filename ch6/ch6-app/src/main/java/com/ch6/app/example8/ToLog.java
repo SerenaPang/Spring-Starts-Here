@@ -1,12 +1,13 @@
-package com.ch6.app.example6;
+package com.ch6.app.example8;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-// The annotation has to be outside of the service package.
+// enables the anotation to be intercepted at runtime
 @Retention(RetentionPolicy.RUNTIME)
+//restricts this annotation to only be used with methods
 @Target(ElementType.METHOD)
 public @interface ToLog {
 
